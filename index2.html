@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js pattern</title>
+</head>
+<body>
+    <script>
+
+    // first triangle
+let n = 5;
+let n2 = "";
+
+for (let i = 1; i <= n; i++) {
+  
+  for (let j = 1; j <= n - i; j++) {
+    n2 += " ";
+  }
+  
+  for (let k = 0; k < 2 * i - 1; k++) {
+    n2 += "*";
+  }
+  n2 += "\n";
+}
+console.log(n2);
+
+// downside triangle
+
+let n1 = 5;
+let string1 = "";
+
+for (let i = 0; i < n1; i++) {
+  
+  for (let j = 0; j < i; j++) {
+    string1 += " ";
+  }
+
+  for (let k = 0; k < 2 * (n1-i) - 1; k++) {
+    string1 += "*";
+  }
+  string1 += "\n";
+}
+console.log(n1);
+    </script>
+</body>
+</html>
